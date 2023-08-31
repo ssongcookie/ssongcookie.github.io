@@ -18,7 +18,7 @@ typora-root-url: ../
 ## [1. git repository 생성]  
 
 | ![git_repository](/assets/img/git_repository_01.png) | 
-|:--:| 
+|:--| 
 |  Repository 이름 설정 시 저장소의 [username]부분이 사용자 이름과 정확히 일치하지 않으면 작동하지 않을 수 있다. |
 
 <br><br>
@@ -37,7 +37,7 @@ git push -u origin main
 ```
  
 | ![git_clone_push](/assets/img/git_clone_push_01.png) |
-|:--|
+|:--:|
 | 잘 Push되었으면 주소창에 username.github.io를 입력하여 확인한다. |
 
 <br><br>
