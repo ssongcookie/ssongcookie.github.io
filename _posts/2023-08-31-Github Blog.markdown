@@ -9,4 +9,7 @@ Github 블로그 만들기!
 - Jekyll 에 글 쓰기
 
 
-![error](assets/img/2023-08-31 14 57 54.png)
+
+| ![error](assets/img/error01.png) | 
+|:--:| 
+| 여기에 캡션을 작성합니다. |
