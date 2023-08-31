@@ -26,11 +26,11 @@ typora-root-url: ../
 
 ##[명령어]  
 ```md
-- cd /[username].github.io/  
-- echo "Hello World" > index.html  
-- git add --all  
-- git commit -m "Initial commit"  
-- git push -u origin main  
+cd /[username].github.io/  
+echo "Hello World" > index.html  
+git add --all  
+git commit -m "Initial commit"  
+git push -u origin main  
 ```
 
 | ![git_clone_push](/assets/img/git_clone_push_01.png) |
@@ -46,10 +46,11 @@ typora-root-url: ../
 
 | ![git_build_error](/assets/img/git_build_error.png) |
 |:--:|
-| 최신 버전은 호환이 되지 않을 수 있으니 안전하게 2.7 정도의 버전을 설치한다.<br>
-=> 실제로 웹호스팅 build 에러가 발생했고, 버전은 2.7.8 로 설치 후 다시 push 하니 정상적으로 build 되었다. |
+| 최신 버전은 호환이 되지 않을 수 있으니 안전하게 2.7 정도의 버전을 설치한다. |
 
 | ![git_build_success](/assets/img/git_build_success.png) |
+|:--:|
+| 실제로 웹호스팅 build 에러가 발생했고, 버전은 2.7.8 로 설치 후 다시 push 하니 정상적으로 build 되었다. |
 
 <br><br><br>
 
@@ -57,10 +58,10 @@ typora-root-url: ../
 
 ##[jekyll 설치]
 ```md
-- gem install jekyll
+gem install jekyll
 ```
-Start Command Prompt with Ruby를 실행하고, 위 명령어를 실행한다.
-ruby -v 와 jekyll -v로 정상적으로 설치되었음을 확인한다.
+- Start Command Prompt with Ruby를 실행하고, 위 명령어를 실행한다.
+- ruby -v 와 jekyll -v로 정상적으로 설치되었음을 확인한다.
 
 <br><br><br>
 
@@ -68,9 +69,9 @@ ruby -v 와 jekyll -v로 정상적으로 설치되었음을 확인한다.
 
 ##[bundle install]
 ```md
-- bundle install
+bundle install
 ```
-위 명령어를 실행한다.
+- 위 명령어를 실행한다.
 
 <br><br><br>
 
@@ -78,7 +79,7 @@ ruby -v 와 jekyll -v로 정상적으로 설치되었음을 확인한다.
 
 ##[Jekyll을 로컬서버에 띄우기]
 ```md
-- bundle exec jekyll serve
+bundle exec jekyll serve
 ```
 
 | ![bundle_server](/assets/img/bundle_server.png) |
@@ -91,9 +92,9 @@ ruby -v 와 jekyll -v로 정상적으로 설치되었음을 확인한다.
 
 ##[원격에 push]
 ```md
-- git add --all
-- git commit -m "커밋 메시지"
-- git push
+git add --all
+git commit -m "커밋 메시지"
+git push
 ```
 - 위 명령어로 원격에 push 하고, 브라우저에 github.io 주소를 입력하여 확인한다.
 
