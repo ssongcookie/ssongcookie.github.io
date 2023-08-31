@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Github blog"
+title:  "test"
 date:   2023-08-31 13:10:00 +0900
 categories: Javascript NodeJS
 ---
