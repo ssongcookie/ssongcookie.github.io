@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Github blog 만들기 !!"
+title:  "Github blog"
 date:   2023-08-31 13:10:00 +0530
 categories: Javascript NodeJS
 ---
