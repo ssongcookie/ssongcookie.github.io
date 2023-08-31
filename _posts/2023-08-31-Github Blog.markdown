@@ -79,7 +79,7 @@ ruby -v 와 jekyll -v로 정상적으로 설치되었음을 확인한다.
 ##[Jekyll을 로컬서버에 띄우기]
 ```md
 - bundle exec jekyll serve
-```md
+```
 
 | ![bundle_server](/assets/img/bundle_server.png) |
 |:--:|
