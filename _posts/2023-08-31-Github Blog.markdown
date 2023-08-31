@@ -13,7 +13,7 @@ Github 블로그 만들기!
 |:--:| 
 |  Repository 이름 설정 시 저장소의 [username]부분이 사용자 이름과 정확히 일치하지 않으면 작동하지 않을 수 있다. |
 
-3. clone 하기
+2. clone 하기
 - git bash를 열어 clone할 경로로 이동한 후, clone을 시작한다. 그리고 Push 한다.
 
 [명령어]
