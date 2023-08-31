@@ -8,6 +8,8 @@ typora-root-url: ../
 Github 블로그 만들기! 
 <br><br><br>
 
+---
+
 [git repository 생성]  
 
 | ![git_repository](/assets/img/git_repository_01.png) | 
