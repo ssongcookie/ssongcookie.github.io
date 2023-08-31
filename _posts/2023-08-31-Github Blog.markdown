@@ -29,7 +29,7 @@ git add --all
 git commit -m "Initial commit"  
 git push -u origin main  
 ```
-<br> 
+ 
 | ![git_clone_push](/assets/img/git_clone_push_01.png) |
 |:--:|
 | 잘 Push되었으면 주소창에 username.github.io를 입력하여 확인한다. |
@@ -74,7 +74,7 @@ bundle install
 ```md
 bundle exec jekyll serve
 ```  
-<br>  
+  
 | ![bundle_server](/assets/img/bundle_server.png) |
 |:--:|
 | 위 명령어를 실행하고, 로컬서버를 확인한다. |
