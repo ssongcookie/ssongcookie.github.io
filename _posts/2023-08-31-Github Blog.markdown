@@ -5,7 +5,6 @@ date:   2023-08-31 13:10:00 +0900
 categories: [Github, blog]
 typora-root-url: ../
 ---
-# Github 블로그 만들기!  
 ### 목차
 1. git repository 생성
 2. clone 하기
