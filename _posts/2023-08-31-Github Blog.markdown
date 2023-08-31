@@ -7,22 +7,22 @@ typora-root-url: ../
 ---
 Github 블로그 만들기! 
 
-1. git repository 생성
-
+1. git repository 생성  
+  
 | ![git_repository](/assets/img/git_repository_01.png) | 
 |:--:| 
 |  Repository 이름 설정 시 저장소의 [username]부분이 사용자 이름과 정확히 일치하지 않으면 작동하지 않을 수 있다. |
 
-2. clone 하기
-- git bash를 열어 clone할 경로로 이동한 후, clone을 시작한다. 그리고 Push 한다.
-
-[명령어]
-- cd /[username].github.io/
-- echo "Hello World" > index.html
-- git add --all
-- git commit -m "Initial commit"
-- git push -u origin main
-
+2. clone 하기  
+- git bash를 열어 clone할 경로로 이동한 후, clone을 시작한다. 그리고 Push 한다.  
+  
+[명령어]  
+- cd /[username].github.io/  
+- echo "Hello World" > index.html  
+- git add --all  
+- git commit -m "Initial commit"  
+- git push -u origin main  
+  
 | ![git_clone_push](/assets/img/git_clone_push_01.png) |
 |:--:|
 | 잘 Push되었으면 주소창에 username.github.io를 입력하여 확인한다. |
