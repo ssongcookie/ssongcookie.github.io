@@ -5,10 +5,11 @@ date:   2023-08-31 13:10:00 +0900
 categories: [Github, blog]
 typora-root-url: ../
 ---
-#Github 블로그 만들기! 
+Github 블로그 만들기! 
 <br><br><br>
 
-##[git repository 생성]
+[git repository 생성]  
+
 | ![git_repository](/assets/img/git_repository_01.png) | 
 |:--:| 
 |  Repository 이름 설정 시 저장소의 [username]부분이 사용자 이름과 정확히 일치하지 않으면 작동하지 않을 수 있다. |
@@ -17,14 +18,14 @@ typora-root-url: ../
 
 ---  
 
-##[clone 하기]  
+[clone 하기]  
 - git bash를 열어 clone할 경로로 이동한 후, clone을 시작한다. 그리고 Push 한다.  
 
 <br><br><br>
 
 ---
 
-##[명령어]  
+[명령어]  
 ```md
 cd /[username].github.io/  
 echo "Hello World" > index.html  
@@ -32,7 +33,7 @@ git add --all
 git commit -m "Initial commit"  
 git push -u origin main  
 ```
-
+  
 | ![git_clone_push](/assets/img/git_clone_push_01.png) |
 |:--:|
 | 잘 Push되었으면 주소창에 username.github.io를 입력하여 확인한다. |
@@ -41,7 +42,7 @@ git push -u origin main
 
 ---
 
-##[ruby 설치]
+[ruby 설치]
 - ruby 홈페이지 : [rubyinstaller](https://rubyinstaller.org/downloads/){:target="_blank"}
 
 | ![git_build_error](/assets/img/git_build_error.png) |
@@ -56,7 +57,7 @@ git push -u origin main
 
 ---
 
-##[jekyll 설치]
+[jekyll 설치]
 ```md
 gem install jekyll
 ```
@@ -67,7 +68,7 @@ gem install jekyll
 
 ---
 
-##[bundle install]
+[bundle install]
 ```md
 bundle install
 ```
@@ -77,11 +78,11 @@ bundle install
 
 ---
 
-##[Jekyll을 로컬서버에 띄우기]
+[Jekyll을 로컬서버에 띄우기]
 ```md
 bundle exec jekyll serve
-```
-
+```  
+  
 | ![bundle_server](/assets/img/bundle_server.png) |
 |:--:|
 | 위 명령어를 실행하고, 로컬서버를 확인한다. |
@@ -90,7 +91,7 @@ bundle exec jekyll serve
 
 ---
 
-##[원격에 push]
+[원격에 push]
 ```md
 git add --all
 git commit -m "커밋 메시지"
