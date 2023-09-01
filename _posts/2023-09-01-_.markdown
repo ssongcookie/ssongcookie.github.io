@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "오늘은 어떤걸 써볼까.."
+date:   2023-09-01 09:40:00 +0900
+categories: [Github, blog]
+typora-root-url: ../
+---
