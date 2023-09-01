@@ -52,7 +52,7 @@ git push -u origin main
 
 | ![git_build_success](/assets/img/git_build_success.png) |
 |:--:|
-| 실제로 웹호스팅 build 에러가 발생했고, 버전은 2.7.8 로 설치 후 다시 push 하니 정상적으로 build 되었다. |
+| 실제로 최신 버전으로 진행 시 build 에러가 발생했고, 버전을 2.7.8 로 설치 후 다시 push 하니 정상적으로 build 되었다. |
 
 <br><br>
 
