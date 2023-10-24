@@ -1,7 +1,80 @@
 ---
 layout: post
-title:  "오늘은 어떤걸 써볼까.."
-date:   2023-09-01 09:40:00 +0900
-categories: [Github, blog]
+title:  "Apache Tomcat 윈도우 서비스 등록"
+date:   2023-10-24 14:51:00 +0900
+categories: [Tomcat, setting]
 typora-root-url: ../
+---
+
+### 목차
+1. Eclipse 웹프로젝트 war파일 배포
+2. Context path 변경
+3. 톰캣 실행과 서비스 등록
+
+---
+## [1. Eclipse 웹프로젝트 war파일 배포]  
+
+톰캣 서버를 실행하는 방법은 이클립스에서 톰캣 라이브러리를 연결해서 서버를 올리고 내리는 방법 외에도, 톰캣 서버 자체를 실행시키는 방법이 있다.<br>
+
+톰캣 서버를 자체 실행하면 프로젝트를 실행하는 속도가 더 빨라질 수 있으므로, 프로젝트의 실행 속도가 느린 경우에는 톰캣 서버 자체를 실행하는 것을 고려해 볼 수 있다.<br>
+
+그래서 오늘은 프로젝트의 구동 속도를 높이기 위해 톰캣 서버 자체 실행하는 것을 도전해 보았다.<br>
+
+|Apache Tomcat 홈페이지 : [Apache Tomcat](https://tomcat.apache.org/)
+|:--|
+| ![git_clone_push](/assets/img/tomcat_install.png)
+| 톰캣 서버를 자체 실행하기 위해서는 먼저 톰캣을 설치해야 한다.<br>|
+
+<br>
+
+|** war 파일 배포 방법
+|:--|
+|1. 이클립스에서 웹 프로젝트를 선택한 후, "File" 메뉴에서 "Export"를 클릭한다.<br>2. "WAR file"을 선택하고, "Next"를 클릭한다.<br>3. "WAR file export destination"에서 war 파일을 저장할 경로를 지정한다.<br>4. "Archive file name"에서 war 파일의 이름을 지정한다.<br>5. "Web module"에서 export할 웹 모듈을 선택한다.<br>6. "Export"를 클릭하여 war 파일을 생성한다.<br>7. 그리고 설치된 톰캣의 webapp 폴더에 war 파일을 넣는다.|
+
+| ![git_clone_push](/assets/img/warfile.png)|
+|:--|
+|톰캣 서버를 실행하면서 webapps폴더 내의 war 압축파일을 풀어 웹어플리케이션을 사용할 수 있게 만드는 것이다. <br>*톰캣 서버 실행방법은 3.톰캣 실행과 서비스 등록 부분 참고 |
+
+<br>
+
+---  
+## [2. Context path 변경]  
+server.xml에서 Context path를 변경한다.<br>
+
+
+|** Context path 변경 방법 <br> 
+|:--
+|server.xml은 톰캣이 설치된 경로의 conf 폴더의 server.xml에서 Context 부분을 수정하여 Root를 설정할 수 있다.|
+```md
+<Context path="/" docBase="SOC_USER" debug="0" privileged="true" /> 
+```
+<br><br>
+
+---
+## [3. 톰캣 실행과 서비스 등록]
+
+- 톰캣 서버를 올리기 전에 다음과 같은 사항을 체크해야 한다.
+1. 포트 확인 및 변경<br>
+서버 등록 시 포트 충돌이 나면 기존에 그 포트를 사용하던 서버와 내가 올리려는 서버가 모두 죽어버릴 수 있으므로, 꼭 확인해야 한다.<br><br>
+2. 서비스명 확인 및 변경<br>
+내가 등록하려는 서비스명이 충돌이 날 수 있으니, 바꿔주는 것이 좋다.<br>
+
+<br>
+
+|** 톰캣 실행 방법 <br> 
+|:--
+|cmd를 통해 bin 폴더 경로로 이동하여, startup.bat 파일을 실행하면 서버가 시작되고, 서버를 종료할 때는 shutdown.bat 파일을 실행하면 된다.|
+```md
+cd C:/Tomcat/bin/
+startup.bat
+```
+<br>
+
+|** 서비스명 설정 방법<br> 
+|:--
+| ![git_build_success](/assets/img/tomcat_service_rename.png) 
+|bin - service.bat 파일을 편집으로 열어 표시된 SERVICE_NAME과 DISPLAYNAME을 바꿔준다.|
+
+<br>
+
 ---
