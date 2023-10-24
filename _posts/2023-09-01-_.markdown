@@ -43,8 +43,9 @@ server.xml에서 Context path를 변경한다.<br>
 
 
 |** Context path 변경 방법 <br> 
-|:--
+|:--|
 |server.xml은 톰캣이 설치된 경로의 conf 폴더의 server.xml에서 Context 부분을 수정하여 Root를 설정할 수 있다.|
+
 ```md
 <Context path="/" docBase="SOC_USER" debug="0" privileged="true" /> 
 ```
@@ -62,8 +63,9 @@ server.xml에서 Context path를 변경한다.<br>
 <br>
 
 |** 톰캣 실행 방법 <br> 
-|:--
+|:--|
 |cmd를 통해 bin 폴더 경로로 이동하여, startup.bat 파일을 실행하면 서버가 시작되고, 서버를 종료할 때는 shutdown.bat 파일을 실행하면 된다.|
+
 ```md
 cd C:/Tomcat/bin/
 startup.bat
@@ -71,7 +73,7 @@ startup.bat
 <br>
 
 |** 서비스명 설정 방법<br> 
-|:--
+|:--|
 | ![git_build_success](/assets/img/tomcat_service_rename.png) 
 |bin - service.bat 파일을 편집으로 열어 표시된 SERVICE_NAME과 DISPLAYNAME을 바꿔준다.|
 
