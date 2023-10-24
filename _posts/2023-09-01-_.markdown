@@ -77,4 +77,10 @@ startup.bat
 
 <br>
 
+마지막으로 cmd를 통해 bin 폴더 경로로 이동하여, service.bat install 을 입력하면 서비스 등록이 완료된다.
+```md
+cd C:/Tomcat/bin/
+service.bat install
+```
+
 ---
